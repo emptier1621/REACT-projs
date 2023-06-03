@@ -5,12 +5,12 @@
 
 .productos h2{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 600;
     font-style: italic;
     font-family: 'Titillium Web', sans-serif;
     color: #adf182;
-    text-shadow: 0 0 10px #c7fba5;
+    text-shadow: 0 0 10px #000;
 }
 
 
