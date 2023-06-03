@@ -1,0 +1,16 @@
+.productos{
+    width: 100%;
+    height: 90%;
+}
+
+.productos h2{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    font-style: italic;
+    font-family: 'Titillium Web', sans-serif;
+    color: #adf182;
+    text-shadow: 0 0 10px #c7fba5;
+}
+
+

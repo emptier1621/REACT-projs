@@ -1,145 +1,58 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-*{
-padding: 0;
-margin: 0;
-}
-
-.container{
-  margin: auto;
+.main{
+  height: 100vh;
   width: 90vw;
-  height: 80vh;
-  background-color: rgba(20, 230, 107, 0.089);
-  display: flex;
+  margin: auto;
 }
 
-.left{
-  width: 50%;
-  height: 100%;
-  background-color: rgba(24, 20, 230, 0.089);
-}
-
-.right{
-  width: 50%;
-  height: 100%;
-  background-color: rgba(255, 30, 0, 0.089);
-  display: flex;
-  flex-direction: column;
-}
-
-.right .top{
-  width: 100%;
-  height: 80%;
-  background-color: rgba(255, 30, 0, 0.089);
-}
-
-.right .bottom{
-  width: 100%;
-  height: 20%;
-  background-color: rgba(68, 0, 255, 0.089);
-}
-
-.productos{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow-y: scroll;
-  gap: 5px;
-}
-
-.producto{
+.main .panel{
   display: grid;
-  grid-template-columns: 2fr 1.5fr;
+  grid-template-columns: 60vw 30vw;
+  grid-template-rows: 10vh 75vh 15vh;
+  
 }
 
-.producto hr{
-  width: 100%;
-  position: sticky;
-}
-
-.producto .info{
-  grid-column: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 0.5fr;
-}
-
-.producto .nombre{
-  grid-column: 1;
-  grid-row: 1 / span 2;
-  font-size: 20px;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.producto .precio{
-  grid-column: 2;
+.main .panel .titulo{
+  grid-column: 1 / span 2;
   grid-row: 1;
-  font-size: 18px;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  z-index: 0;
+  font-size: 2em;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  color: #c7fba5;
+  text-transform: uppercase;
+  text-shadow: 0 5px 10px #adf182;
 }
 
-.producto .stock{
+.main .panel .titulo:hover{
+  scale: 1.05;
+  cursor: default;
+}
+
+.main .panel .left{
+  grid-column: 1;
+  grid-row: 2;
+  height: 70vh;
+  width: 60vw;
+  box-sizing: border-box;
+  margin: 0 auto;
+  overflow-y: scroll;
+  z-index: 0;
+
+}
+
+.main .panel .right{
   grid-column: 2;
   grid-row: 2;
-  font-size: 15px;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
+  height: 70vh;
+  width: 25vw;
+  margin: 0 auto;
+  z-index: 0;
 }
 
-.producto .options{
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
+.main .bottom{
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  z-index: 0;
 }
-
-
-.producto .options .inpStock{
-  width: 30px;
-  height: 20px;
-  margin: auto;
-}
-
-.producto .options .btnProduct{
-  width: 25px;
-  height: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-}
-
-.producto .options .btnOrder{
-  width: 80px;
-  height: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-}
-
-
-
-
-
-
-
-

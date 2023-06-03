@@ -1,0 +1,176 @@
+.producto{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 100%;
+}
+
+.producto .info{
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 45% 45%;
+    z-index: 1;
+}
+
+.producto .info .nombre{
+    text-transform: capitalize;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    font-family: 'Comic Neue', cursive;
+    font-weight: 600;
+    color: #c7fba5;
+}
+
+.producto .info .precio{
+    text-align: center;
+    grid-column: 2;
+    grid-row: 2;
+    font-family: 'Comic Neue', cursive;
+    font-style: italic;
+    color: #8bd450;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.producto .info .precio strong{
+    font-family: 'Titillium Web', sans-serif;
+    color: #dc7d68;
+}
+
+.producto .info .stock{
+    text-align: center;
+    grid-column: 2;
+    grid-row: 1;
+    font-family: 'Comic Neue', cursive;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.producto .info .stock strong{
+    font-family: 'Titillium Web', sans-serif;
+    color: #dc7d68;
+}
+
+
+
+
+.producto .info .nombre{
+    grid-column: 1;
+    z-index: 1;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.producto .options{
+    grid-column: 2;
+    grid-row: 1;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 0.3fr 0.3fr 0.3fr 1fr;
+    margin: auto 0;
+}
+
+.producto .options .btnProduct{
+    width: 25px;
+    height: 25px;
+    border-radius: 10000px;
+    border: 1px solid #ee441e;
+    box-shadow: 0px 0px 10px #ee441e;
+    background-color: #000 ;
+    color: #ee441e;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.producto .options .btnProduct:hover{
+    scale: 1.2;
+    box-shadow: 0px 0px 10px #ee441e;
+    cursor: pointer;
+}
+
+.producto .options .btnProduct:disabled{
+    border: 1px solid #e7c76d;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.2) ;
+    color: #e7c76d;
+    font-weight: 300;
+}
+
+.producto .options .btnProduct:disabled:hover{
+    box-shadow: none;
+    cursor: default;
+    scale: unset;
+}
+
+.producto .options .pago{
+    width: 25px;
+    text-align: center;
+    color: #c7fba5;
+    display: flex;
+}
+
+.producto .options .btnOrder{
+    background-color: rgba(0, 0, 0, 0);
+    color: #c7fba5;
+    text-shadow: 0 0 10px #000;
+    font-family: 'Comic Neue', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    border: 1px solid #c7fba5;
+    border-radius: 10px;
+    width: 100px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #000;
+}
+
+.producto .options .btnOrder:hover{
+    scale: 1.2;
+    box-shadow: 0px 0px 10px #c7fba5;
+    cursor: pointer;
+}
+
+.producto .options .btnRemove{
+    background-color: rgba(0, 0,0,0);
+    color: #ee441e;
+    text-shadow: 0 0 10px #000;
+    font-family: 'Comic Neue', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    border: 1px solid #ee441e;
+    border-radius: 10px;
+    width: 100px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #000;
+}
+
+.producto .options .btnRemove:hover{
+    scale: 1.2;
+    box-shadow: 0px 0px 10px #ee441e;
+    cursor: pointer;
+}
+
+.producto .options .btnOrder:disabled{
+    background-color: rgba(255, 255, 255, 0.164);
+    color: #e7c76d;
+    text-shadow: unset;
+    font-family: 'Comic Neue', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    border: 1px solid #e7c76d;
+    border-radius: 10px;
+    width: 100px;
+    margin: 0 auto;
+    box-shadow: 0 0 0px #e7c76d;
+}
+
+.producto .options .btnOrder:disabled:hover{
+    scale: unset;
+    cursor: default;
+}

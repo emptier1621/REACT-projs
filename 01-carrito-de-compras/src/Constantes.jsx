@@ -13,7 +13,7 @@ export const products = [
     {
         nombre:'queso rallado 1kg',
         precio: 20.00,
-        stock: 10
+        stock: 0
     },
     {
         nombre:'salsa de tomate 500g',
